@@ -11,10 +11,9 @@
 $('#field').val('jquery');
 console.log($('#field').val()); //undefined
 
-setTimeout(() => {
+setInterval(() => {
     $('#field').val('jquery2');
     $("#field")[0].dispatchEvent(new Event("input", { bubbles: true }));
-    $('#field').val('jquery3');
 }, 2000)
 
 </script>
